@@ -1,0 +1,42 @@
+#pragma once
+
+// All the component types available to the game. 
+enum EComponentTypeId
+{
+	CID_ENTITY,
+	CID_PLAYER,
+	CID_ALIEN,
+	CID_BOMB,
+	CID_ROCKET,
+	CID_HEALTH,
+	CID_RENDER,
+	CID_SCORE
+};
+
+
+// All the message types available to the game
+enum MessageTypeId
+{
+	M_UPDATE,
+	M_MOVE_RIGHT,
+	M_MOVE_LEFT,
+	M_MOVE_ALIEN,
+	M_MOVE_UP,
+	M_MOVE_DOWN,
+	M_FIRE_ROCKET,
+	M_FIRE_BOMB,
+	M_CHECK_COLLISION_WITH_PLAYER,
+	M_CHECK_COLLISION_WITH_ALIEN,
+	M_CHECK_COLLISION_WITH_BOMB,
+	M_CHECK_COLLISION_WITH_ROCKET,
+	M_RENDER,
+	M_TAKE_DAMAGE,
+	M_DEALTH,
+	M_ALIEN_DEALTH
+};
+
+
+#define WINWIDTH 640
+#define WINHEIGHT 480
+#define RADIUS 32
+#define SPEED 25
